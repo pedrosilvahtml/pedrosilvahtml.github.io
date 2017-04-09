@@ -1684,13 +1684,13 @@
 
 	#header-wrapper {
 		position: relative;
-		background: #ffffff;
+		background: #f7f7f7;
 		border-bottom: solid 1px #ccc;
 	}
 
 	#main-wrapper {
 		position: relative;
-        top: -185px;
+        top: -100px;
 		background: #f7f7f7 url("images/bg02.png");
 	}
 
@@ -1915,7 +1915,7 @@
 			#header {
 				text-align: center;
                 position: relative; 
-                top: -60px; 
+                top: -40px; 
                 width: 100%;
                 }
 
