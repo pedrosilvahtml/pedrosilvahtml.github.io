@@ -23,7 +23,7 @@
 									<li class="current">
 										<a href="#">Serviços</a>
 										<ul>
-                                            <li><a href="Seguros.html">Seguros</a></li>
+											<li><a href="Seguros.html">Seguros</a></li>
 											<li><a href="">Alojamento Local</a></li>
 											<li><a href="">Promover a sua Propriedade</a></li>
                                             <li><a href="">Rent a Car</a></li>
@@ -46,27 +46,31 @@
 						<!-- Content -->
 							<article class="box post">
 								<header>
-									<h2>Seguros</h2>
-									<p>Em construção</p>
+									<h2>Simular Seguro Auto</h2>
+									<p></p>
 								</header>
 								<p>
-									Em construção
+                                    Preencha o seguinte formulário
+									<!--Para encontrar o melhor seguro automovel preencha o seguinte fomulário e será contactado com um plano especial para si.-->
 								</p>
-								<p>
-									Em construção
-								</p>
-								<section>
-									<header>
-										<h3>Em construção</h3>
-									</header>
-									<p>
-										Em construção
-									</p>
-									<p>
-										Em construção
-									</p>
-								</section>
 								
+                                <form id="formRequest">
+
+                                Nome:<br/>
+                                <input type="text" name="firstname" id="firstname" placeholder="" /><br/>
+
+                                Morada:<br/>
+                                <input type="text" name="lastname" id="lastname" maxlength="10" placeholder="" /><br/>
+
+
+                                <center>
+                                <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
+                                <!--<input type="reset" value="Limpar"/>-->
+                                </center>
+
+
+                                </form>
+
 							</article>
 
 					</div>
@@ -131,6 +135,25 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+                <script src="assets/js/jquery.min.js"></script>
+                <script type="text/javascript">var submitted=false;</script>
+                <script type="text/javascript">
+                $('#gform').on('submit', function(e) {
+                  $('#gform *').fadeOut(2000);
+                  $('#gform').prepend('Your submission has been processed...');
+                  });
+            <!--  Form -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+            </script>
+            <script>
+            function postContactToGoogle() {
+            var firstname=$('#firstname').val();
+            var lastname=$('#lastname').val();
+            $.ajax({
+            url:"https://docs.google.com/forms/d/e/1FAIpQLSe9YN3qWLPXxy2VZuM2J282i6J6cJ79HQIIt9165YQGHqdsNQ/formResponse",data:{"entry_1380137626":firstname,"entry_339464294":lastname},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+            });
+            }
+            </script>
 
 	</body>
 </html>

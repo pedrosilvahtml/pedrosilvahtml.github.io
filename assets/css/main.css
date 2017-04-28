@@ -1304,8 +1304,8 @@
 		text-decoration: none;
 		cursor: pointer;
 		border: 0;
-		border-radius: 5px;
-		background: #003B6F;
+		border-radius: 10px;
+		background: #03396c;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1320,7 +1320,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #e53359;
+			background: #005b96;
 		}
 
 		input[type="button"]:active,
@@ -1328,7 +1328,7 @@
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #c51349;
+			background: #6497b1;
 		}
 
 		input[type="button"].alt,
@@ -1690,7 +1690,7 @@
 
 	#main-wrapper {
 		position: relative;
-        top: -100px;
+        top: -60px;
 		background: #f7f7f7 url("images/bg02.png");
 	}
 

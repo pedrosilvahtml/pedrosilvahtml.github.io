@@ -23,7 +23,7 @@
 									<li class="current">
 										<a href="#">Serviços</a>
 										<ul>
-                                            <li><a href="Seguros.html">Seguros</a></li>
+											<li><a href="Seguros.html">Seguros</a></li>
 											<li><a href="">Alojamento Local</a></li>
 											<li><a href="">Promover a sua Propriedade</a></li>
                                             <li><a href="">Rent a Car</a></li>
@@ -46,27 +46,13 @@
 						<!-- Content -->
 							<article class="box post">
 								<header>
-									<h2>Seguros</h2>
-									<p>Em construção</p>
+									<h2>Seguro Auto</h2>
+									<p></p>
 								</header>
-								<p>
-									Em construção
-								</p>
-								<p>
-									Em construção
-								</p>
-								<section>
-									<header>
-										<h3>Em construção</h3>
-									</header>
-									<p>
-										Em construção
-									</p>
-									<p>
-										Em construção
-									</p>
-								</section>
-								
+                                <p>Obrigado por escolher os nossos serviços.</p>
+		
+
+
 							</article>
 
 					</div>
@@ -131,6 +117,13 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+                <script src="assets/js/jquery.min.js"></script>
+                <script type="text/javascript">var submitted=false;</script>
+                <script type="text/javascript">
+                $('#gform').on('submit', function(e) {
+                  $('#gform *').fadeOut(2000);
+                  $('#gform').prepend('Your submission has been processed...');
+                  });
 
 	</body>
 </html>
