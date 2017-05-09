@@ -30,7 +30,7 @@
                                             <li><a href="">Serviço Taxi</a></li>	
 										</ul>
 									</li>
-									<li><a href="#">Contactos</a></li>
+									<li><a href="Contactos.html">Contactos</a></li>
 								</ul>
 							</nav>
 					</div>
@@ -51,18 +51,56 @@
 								</header>
 								<p>
                                     Preencha o seguinte formulário
-									<!--Para encontrar o melhor seguro automovel preencha o seguinte fomulário e será contactado com um plano especial para si.-->
+									<!--Para encontrar o melhor seguro automovel preencha o seguinte fomulário e será contactado rapidamente com um plano especial para si.-->
 								</p>
 								
                                 <form id="formRequest">
 
                                 Nome:<br/>
-                                <input type="text" name="firstname" id="firstname" placeholder="" /><br/>
+                                <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
 
-                                Morada:<br/>
-                                <input type="text" name="lastname" id="lastname" maxlength="10" placeholder="" /><br/>
-
-
+                                Telefone:<br/>
+                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                    
+                                Email:<br/>
+                                <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
+                                    
+                                Matricula:<br/>
+                                <input type="text" name="Matricula" id="Matricula" maxlength="100" placeholder="XX-XX-XX"/><br/>
+                                
+                                Data da Primeira Matricula:<br/>
+                                <input type="text" name="DatadaPrimeiraMatricula" id="DatadaPrimeiraMatricula" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                
+                                Combustível:<br/>
+                                <input type="text" name="Combustível" id="Combustível" maxlength="100" placeholder=""/><br/>
+                                
+                                Marca:<br/>
+                                <input type="text" name="Marca" id="Marca" maxlength="100" placeholder=""/><br/>
+                                
+                                Modelo:<br/>
+                                <input type="text" name="Modelo" id="Modelo" maxlength="100" placeholder=""/><br/>
+                                    
+                                Cilindrada:<br/>
+                                <input type="text" name="Cilindrada" id="Cilindrada" maxlength="100" placeholder=""/><br/>
+                                    
+                                Data de Nascimento:<br/>
+                                <input type="text" name="DatadeNascimento" id="DatadeNascimento" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                    
+                                Data da Carta de Condução:<br/>
+                                <input type="text" name="DataCartadeCondução" id="DataCartadeCondução" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                    
+                                Sexo:<br/>
+                                <input type="text" name="Sexo" id="Sexo" maxlength="100" placeholder="Masculino/Feminino"/><br/>
+                                    
+                                Número de Anos com Seguro:<br/>
+                                <input type="text" name="Numerodeanoscomseguro" id="Numerodeanoscomseguro" maxlength="100" placeholder=""/><br/>
+                                    
+                                Já Segurado?:<br/>
+                                <input type="text" name="Jasegurado" id="Jasegurado" maxlength="100" placeholder="Sim/Não"/><br/>
+                                    
+                                Código Postal de Residência:<br/>
+                                <input type="text" name="CodigoPostal" id="CodigoPostal" maxlength="100" placeholder="XXXX-XXX"/><br/>
+             
                                 <center>
                                 <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
                                 <!--<input type="reset" value="Limpar"/>-->
@@ -76,7 +114,7 @@
 					</div>
 				</div>
 
-			<!-- Footer -->
+<!-- Footer -->
 				<div id="footer-wrapper">
 					<section id="footer" class="container">
 							<div class="4u 12u(mobile)">
@@ -88,9 +126,9 @@
 										<li>
 											<h3>Morada</h3>
 											<p>
-												Texto<br />
-												Texto<br />
-												Texto
+												9370-050<br />
+												Arco Da Calheta<br />
+												Rua Padre José Eduardo Faria Nº30
 											</p>
 										</li>
 										<li>
@@ -116,7 +154,7 @@
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>Hosted by Github</li><li>Desigined by Pedro Silva</a></li>
+											<li>Hosted by Github</li><li>Desigined by Pedro Silva</li>
 										</ul>
 									</div>
 
@@ -124,9 +162,6 @@
 						</div>
 					</section>
 				</div>
-
-		</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -147,10 +182,24 @@
             </script>
             <script>
             function postContactToGoogle() {
-            var firstname=$('#firstname').val();
-            var lastname=$('#lastname').val();
+            var Nome=$('#Nome').val();
+            var Telefone=$('#Telefone').val();
+            var Email=$('#Email').val();
+            var Matricula=$('#Matricula').val();   
+            var DatadaPrimeiraMatricula=$('#DatadaPrimeiraMatricula').val();
+            var Combustível=$('#Combustível').val();
+            var Marca=$('#Marca').val();
+            var Modelo=$('#Modelo').val();
+            var Cilindrada=$('#Cilindrada').val();
+            var DatadeNascimento=$('#DatadeNascimento').val();
+            var DataCartadeCondução=$('#DataCartadeCondução').val();
+            var Sexo=$('#Sexo').val();
+            var Numerodeanoscomseguro=$('#Numerodeanoscomseguro').val();
+            var Jasegurado=$('#Jasegurado').val();
+            var CodigoPostal=$('#CodigoPostal').val();
+              
             $.ajax({
-            url:"https://docs.google.com/forms/d/e/1FAIpQLSe9YN3qWLPXxy2VZuM2J282i6J6cJ79HQIIt9165YQGHqdsNQ/formResponse",data:{"entry_1380137626":firstname,"entry_339464294":lastname},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+            url:"https://docs.google.com/forms/d/1Izwmv0xqG0k-Jn-lMrzN9VzQaH_ijFBNQEA0XMcvpjg/formResponse",data:{"entry.1470953227":Nome,"entry.1744960072":Telefone,"entry.771707804":Email,"entry.371038216":Matricula,"entry.73737971":DatadaPrimeiraMatricula,"entry.2052185844":Combustível,"entry.1702398671":Marca,"entry.485482698":Modelo,"entry.114310647":Cilindrada,"entry.1952014090":DatadeNascimento,"entry.51849102":DataCartadeCondução,"entry.1982439059":Sexo,"entry.652823950":Numerodeanoscomseguro,"entry.1089358811":Jasegurado,"entry.752664848":CodigoPostal},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
             });
             }
             </script>
