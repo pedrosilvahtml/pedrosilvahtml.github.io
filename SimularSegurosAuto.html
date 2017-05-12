@@ -55,7 +55,9 @@
 								</p>
 								
                                 <form id="formRequest">
-
+                                    
+                                <h3>Dados pessoais</h3><br/>  
+                                    
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
 
@@ -65,8 +67,10 @@
                                 Email:<br/>
                                 <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
                                     
+                                <h3>Dados do Veículo</h3><br/> 
+                                    
                                 Matricula:<br/>
-                                <input type="text" name="Matricula" id="Matricula" maxlength="100" placeholder="XX-XX-XX"/><br/>
+                                <input type="text" name="Matricula" id="Matricula" maxlength="100" placeholder="00-00-00"/><br/>
                                 
                                 Data da Primeira Matricula:<br/>
                                 <input type="text" name="DatadaPrimeiraMatricula" id="DatadaPrimeiraMatricula" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
@@ -82,6 +86,8 @@
                                     
                                 Cilindrada:<br/>
                                 <input type="text" name="Cilindrada" id="Cilindrada" maxlength="100" placeholder=""/><br/>
+                                    
+                                <h3>Dados de Condutor Habitual</h3><br/> 
                                     
                                 Data de Nascimento:<br/>
                                 <input type="text" name="DatadeNascimento" id="DatadeNascimento" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
@@ -99,7 +105,7 @@
                                 <input type="text" name="Jasegurado" id="Jasegurado" maxlength="100" placeholder="Sim/Não"/><br/>
                                     
                                 Código Postal de Residência:<br/>
-                                <input type="text" name="CodigoPostal" id="CodigoPostal" maxlength="100" placeholder="XXXX-XXX"/><br/>
+                                <input type="text" name="CodigoPostal" id="CodigoPostal" maxlength="100" placeholder="0000-000"/><br/>
              
                                 <center>
                                 <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
@@ -120,7 +126,7 @@
 							<div class="4u 12u(mobile)">
 								<section>
 									<ul class="social">
-										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-facebook" href="https://www.facebook.com/EmpriseServicos/"><span class="label">Facebook</span></a></li>
 									</ul>
 									<ul class="contact">
 										<li>
@@ -199,7 +205,7 @@
             var CodigoPostal=$('#CodigoPostal').val();
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1Izwmv0xqG0k-Jn-lMrzN9VzQaH_ijFBNQEA0XMcvpjg/formResponse",data:{"entry.1470953227":Nome,"entry.1744960072":Telefone,"entry.771707804":Email,"entry.371038216":Matricula,"entry.73737971":DatadaPrimeiraMatricula,"entry.2052185844":Combustível,"entry.1702398671":Marca,"entry.485482698":Modelo,"entry.114310647":Cilindrada,"entry.1952014090":DatadeNascimento,"entry.51849102":DataCartadeCondução,"entry.1982439059":Sexo,"entry.652823950":Numerodeanoscomseguro,"entry.1089358811":Jasegurado,"entry.752664848":CodigoPostal},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+            url:"https://docs.google.com/forms/d/1Izwmv0xqG0k-Jn-lMrzN9VzQaH_ijFBNQEA0XMcvpjg/formResponse",data:{"entry.1470953227":Nome,"entry.1744960072":Telefone,"entry.771707804":Email,"entry.371038216":Matricula,"entry.73737971":DatadaPrimeiraMatricula,"entry.2052185844":Combustível,"entry.1702398671":Marca,"entry.485482698":Modelo,"entry.114310647":Cilindrada,"entry.1952014090":DatadeNascimento,"entry.51849102":DataCartadeCondução,"entry.1982439059":Sexo,"entry.652823950":Numerodeanoscomseguro,"entry.1089358811":Jasegurado,"entry.752664848":CodigoPostal},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>
