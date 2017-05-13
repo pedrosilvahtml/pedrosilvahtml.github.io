@@ -46,7 +46,7 @@
 						<!-- Content -->
 							<article class="box post">
 								<header>
-									<h2>Simular Seguro Habitação</h2>
+									<h2>Simular Seguro de Acidentes Pessoais</h2>
 									<p></p>
 								</header>
 								<p>
@@ -59,45 +59,35 @@
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
 
-                                Telefone:<br/>
-                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                Morada:<br/>
+                                <input type="text" name="Morada" id="Morada" maxlength="100" placeholder=""/><br/>
                                     
-                                Email:<br/>
-                                <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
-                                    
-                                <h3>Bens / Capitais Seguros</h3><br/>    
-                                    
-                                Edifício:<br/>
-                                <input type="text" name="Edifício" id="Edifício" maxlength="100" placeholder="Valor de reconstrução (€)"/><br/>
-                                
-                                Conteúdo:<br/>
-                                <input type="text" name="Conteúdo" id="Conteúdo" maxlength="100" placeholder="(€)"/><br/>
-                                    
-                                <h3>Dados da Habitação</h3><br/>    
-                                
-                                Área Bruta m2 (área de construção):<br/>
-                                <input type="text" name="ÁreaBruta" id="ÁreaBruta" maxlength="100" placeholder=""/><br/>
-                                
                                 Código Postal:<br/>
                                 <input type="text" name="CódigoPostal" id="CódigoPostal" maxlength="100" placeholder="0000-000"/><br/>
+                                    
+                                Telefone:<br/>
+                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
                                 
-                                Ano de Construção:<br/>
-                                <input type="text" name="AnodeConstrução" id="AnodeConstrução" maxlength="100" placeholder=""/><br/>
+                                Email:<br/>
+                                <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/> 
+                                  
+                                Data de Nascimento:<br/>
+                                <input type="text" name="DatadeNascimento" id="DatadeNascimento" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                
+                                <h3>Dados do Cônjuge</h3><br/>   
                                     
-                                Qualidade de Construção:<br/>
-                                <input type="text" name="QualidadedeConstrução" id="QualidadedeConstrução" maxlength="100" placeholder="Normal/Média/Alta"/><br/>
+                                Nome do Cônjuge:<br/>
+                                <input type="text" name="NomedoCônjuge" id="NomedoCônjuge" maxlength="100" placeholder="Nome Completo"/><br/>
+                                
+                                Data de Nascimento do Cônjuge:<br/>
+                                <input type="text" name="DatadeNascimentodoCônjuge" id="DatadeNascimentodoCônjuge" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
                                     
-                                Tipo de Habitação:<br/>
-                                <input type="text" name="TipodeHabitação" id="TipodeHabitação" maxlength="100" placeholder="Apartamento/Moradia"/><br/>
+                                <h3>Filhos</h3><br/>   
                                     
-                                Fica desocupada mais de 60 dias?<br/>
-                                <input type="text" name="desocupada60dias" id="desocupada60dias" maxlength="100" placeholder="Sim/Não"/><br/>
+                                Número de Filhos:<br/>
+                                <input type="text" name="QntdeFilhos" id="QntdeFilhos" maxlength="100" placeholder=""/><br/>
                                     
-                                Construção Exterior:<br/>
-                                <input type="text" name="Construçãoexterior" id="Construçãoexterior" maxlength="100" placeholder="Tipo de Material"/><br/>
-                                    
-                                Piso:<br/>
-                                <input type="text" name="Piso" id="Piso" maxlength="100" placeholder="R/C/ Andar Intermédio"/><br/>
+
              
                                 <center>
                                 <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
@@ -181,22 +171,18 @@
             <script>
             function postContactToGoogle() {
             var Nome=$('#Nome').val();
-            var Telefone=$('#Telefone').val();
-            var Email=$('#Email').val();
-            var Edifício=$('#Edifício').val();   
-            var Conteúdo=$('#Conteúdo').val();
-            var ÁreaBruta=$('#ÁreaBruta').val();
+            var Morada=$('#Morada').val();
             var CódigoPostal=$('#CódigoPostal').val();
-            var AnodeConstrução=$('#AnodeConstrução').val();
-            var QualidadedeConstrução=$('#QualidadedeConstrução').val();
-            var TipodeHabitação=$('#TipodeHabitação').val();
-            var desocupada60dias=$('#desocupada60dias').val();
-            var Construçãoexterior=$('#Construçãoexterior').val();
-            var Piso=$('#Piso').val();
+            var Telefone=$('#Telefone').val();   
+            var Email=$('#Email').val();
+            var DatadeNascimento=$('#DatadeNascimento').val();
+            var NomedoCônjuge=$('#NomedoCônjuge').val();
+            var DatadeNascimentodoCônjuge=$('#DatadeNascimentodoCônjuge').val();
+            var QntdeFilhos=$('#QntdeFilhos').val();
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1Vzhb7xGDhx9kkV8VQ08ic7WHwwgIDGGJL32idMQGKs4/formResponse",data:{"entry.1378872144":Nome,"entry.1326041509":Telefone,"entry.1670771882":Email,"entry.886818198":Edifício,"entry.404119373":Conteúdo,"entry.2079334708":ÁreaBruta,"entry.1149077910":CódigoPostal,"entry.2030477325":AnodeConstrução,"entry.1467058936":QualidadedeConstrução,"entry.1481386200":TipodeHabitação,"entry.117547358":desocupada60dias,"entry.1750077658":Construçãoexterior,"entry.1540592728":Piso},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("thankyou.html");}}
+            url:"https://docs.google.com/forms/d/1UodmrbeSGt2ONwsF2H5wKIIeFtTfrct-CPXSZumn07g/formResponse",data:{"entry.1551519440":Nome,"entry.939011866":Morada,"entry.1883586875":CódigoPostal,"entry.1153750778":Telefone,"entry.1366427968":Email,"entry.459937749":DatadeNascimento,"entry.431225255":NomedoCônjuge,"entry.1020832785":DatadeNascimentodoCônjuge,"entry.17742113":QntdeFilhos},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("thankyou.html");}}
             });
             }
             </script>
