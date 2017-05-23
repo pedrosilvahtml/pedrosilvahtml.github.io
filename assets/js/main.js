@@ -84,7 +84,9 @@
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
+			
 
+        
 	});
 
 })(jQuery);

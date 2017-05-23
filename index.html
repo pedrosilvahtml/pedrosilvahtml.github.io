@@ -23,16 +23,11 @@
 							<nav id="nav">
 								<ul>
 									<li class="current"><a href="index.html">Home</a></li>
-									<li>
-										<a href="#">Serviços</a>
-										<ul>
-											<li><a href="Seguros.html">Seguros</a></li>
-											<li><a href="Arrendamentos.html">Alojamento Local</a></li>
-											<li><a href="Propiedade.html">Promover a sua Propriedade</a></li>
-                                            <li><a href="RentACar.html">Rent a Car</a></li>
-                                            <li><a href="Transferes.html">Serviço Taxi</a></li>	
-										</ul>
-									</li>
+								    <li><a href="Seguros.html">Seguros</a></li>
+								    <li><a href="Alojamentos.html">Alojamento Local</a></li>
+				                    <li><a href="Gest%C3%A3o.html">Gestão Alojamento</a></li>
+                                    <li><a href="ServicoTaxi.html">Serviço Taxi</a></li>
+                                    <li><a href="RentACar.html">Rent a Car</a></li>
 									<li><a href="Contactos.html">Contactos</a></li>
 								</ul>
 							</nav>
@@ -56,7 +51,7 @@
 								<!-- Seguros -->
 									<section>
 										<header class="major">
-											<h2>Seguros</h2>
+											<h2 class="current" id="Seguros">Seguros</h2>
 										</header>
 										<div class="row">
 											<div class="4u 12u(mobile)">
@@ -110,37 +105,35 @@
 				</div>
 				<div id="main-wrapper">
 					<div class="container">
-						<div class="row">
-							<div class="12u">
-
 								<!-- Arrendamentos -->
 									<section>
 										<header class="major">
-											<h2>Alojamentos</h2>
-										</header>						<div class="row">
-											<div class="4u 12u(mobile)">
+											<h2 id="Alojamentos">Alojamentos</h2>
+										</header>
+                                        <center>
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
 													<header>
 														<h3>Alojamento Local</h3>
 													</header>
-													</br ><p>Deseja encontrar um lugar onde ficar durante as suas férias? Aqui pode encontrar das melhores casas na Madeira para passar a sua noite e dia em sossego.</p>
+													</br ><p>Deseja encontrar um lugar onde ficar durante as suas férias? </p>
 													<footer>
-                                                        </br ></br ><a href="#" class="button alt">Saiba mais</a>
+                                                        </br ><a href="#" class="button">Procure e Reserve já a sua casa</a>
 													</footer>
 												</section>
-											</div>
-											<div class="4u 12u(mobile)">
+                                        </center>
+											
+                                        <center>
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
 													<header>
-														<h3>Promoção da sua Propriedade</h3>
+														<h3>Promoção, Gestão e Manutenção de Alojamentos</h3>
 													</header>
-												    <p>Tem dificuldades a arranjar clientes para a sua casa arrendada? Contacte-nos e oferecemos um serviço de Promoção de Propriedade bem como Limpeza, Manutenção e Requisitos de Segurança da mesma.</p>
+												    <p>É proprietário e procura alojar a sua casa sem preocupações?</p>
 													<footer>
-														<a href="#" class="button alt">Saiba mais</a>
+														</br ><a href="Gest%C3%A3o.html" class="button alt">Saiba mais</a>
 													</footer>
+                                            
 												</section>
+                                        <center>
 											</div>
 										</div>
 									</section>
@@ -152,29 +145,57 @@
 				</div>
 				<div id="main-wrapper">
 					<div class="container">
-						<div class="row">
+	
 							<div class="12u">
 
 								<!-- Outros -->
 									<section>
 										<header class="major">
-											<h2>Outros Serviços</h2>
-										</header>						<div class="row">
-											<div class="4u 12u(mobile)">
+											<h2 id="Outros Serviços">Outros Serviços</h2>
+										</header>						
+											
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic12.jpg" alt="" /></a>
+													<a class="image featured"> <div class="slideshow-container">
+                                                      <div class="mySlides fade">
+                                                        <div class="numbertext">1 / 3</div>
+                                                        <a href="#"><img src="images/tranferes.jpg" style="width:100%" height="350"></a>
+                                                        <div class="text">Tranferes</div>
+                                                      </div>
+
+                                                      <div class="mySlides fade">
+                                                        <div class="numbertext">2 / 3</div>
+                                                        <a href="#"><img src="images/walks1.jpg" style="width:100%" height="350"></a>
+                                                        <div class="text">Madeira Walks</div>
+                                                      </div>
+
+                                                      <div class="mySlides fade">
+                                                        <div class="numbertext">3 / 3</div>
+                                                        <a href="#"> <img src="images/tours1.jpg" style="width:100%" height="350"></a>
+                                                        <div class="text">Madeira Tours</div>
+                                                      </div>
+
+                                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                    </div>
+                                                    <br>
+
+                                                    <div style="text-align:center">
+                                                      <span class="dot" onclick="currentSlide(1)"></span>
+                                                      <span class="dot" onclick="currentSlide(2)"></span>
+                                                      <span class="dot" onclick="currentSlide(3)"></span>
+                                                    </div> </a>
 													<header>
 														<h3>Serviço Taxi</h3>
 													</header>
-													<p>Oferecemos um Serviço Táxi confortável e sem preocupações, realizamos viagem a qualquer ponto da ilha, como também transporte do Aeroporto/Porto até o seu Hotel ou a sua Residência. </p>
+													<p>Nós já conhecemos a nossa ilha, esta na altura de a conhecer também. </br>Oferecemos Transporte ao Aeroporto, Voltas à Ilha, Transporte para as Caminhadas e entre outros.</p>
 													<footer>
-                                                        <a href="#" class="button alt">Saiba mais</a>
+                                                        <a href="ServicoTaxi.html" class="button alt">Saiba mais</a>
 													</footer>
 												</section>
 											</div>
-											<div class="4u 12u(mobile)">
+										</br>
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic11.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img src="images/pic11.jpg" height="350" width="100%" alt="" /></a>
 													<header>
 														<h3>Rent a Car</h3>
 													</header>
@@ -194,6 +215,7 @@
 						
 					</div>
 				</div>
+
 <!-- Footer -->
 				<div id="footer-wrapper">
 					<section id="footer" class="container">
@@ -253,6 +275,35 @@
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0cCaZzxIyFqUy_IPRWVshSCjA2uSDKyE&callback=initMap">
             </script>
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
 
 	</body>
 </html>
