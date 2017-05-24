@@ -2522,6 +2522,9 @@
 		}
 
 /* Icon */
+        .nl {
+            text-decoration:none;
+        }
 
 	.icon {
 		text-decoration: none;
