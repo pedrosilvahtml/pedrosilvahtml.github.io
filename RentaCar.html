@@ -9,6 +9,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <link rel="icon"  type="images/png" href="images/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 
@@ -26,104 +27,18 @@
 										<li><a href="https://www.facebook.com/EmpriseServicos/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 									</ul>
 								</header>
-
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Bem vindo,<br /></h1>
-											<p>Temos um serviço especial para si.</p>
-										</header>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Seguros</h2>
-									</header>
-									<div class="row">
-											<div class="4u 12u$(medium)">
-                                                <a href="#" class="image"><img src="images/carro.jpg" width="75" height="75" alt="" /></a>
-												<h3>Seguro Automóvel</h3>
-												<p>Seguro automóvel com coberturas adaptáveis a cada cliente. Desde o mínimo obrigatório até cobertura completa de danos próprios.</p>
-                                                <ul class="actions">
-														<li><a href="SeguroAuto.html" class="button special">Peça Simulação</a></li>
-														<br /><br /><li><a href="SeguroAuto.html" class="button">Saiba Mais</a></li>
-													</ul>
-											</div>
-											<div class="4u 12u$(medium)">
-                                                <a href="#" class="image"><img src="images/saude.jpg" width="75" height="75" alt="" /></a>
-												<h3>Seguro de Proteção Vida, Acidentes e Saúde</h3>
-												<p>Seguros de Vida, Acidentes Pessoais, Saúde, Saúde dentária.</p><br />
-                                                <ul class="actions">
-														<li><a href="SeguroSaude.html" class="button special">Peça Simulação</a></li>
-														<br /><br /><li><a href="SeguroSaude.html" class="button">Saiba Mais</a></li>
-													</ul>
-											</div>
-											<div class="4u 12u$(medium)">
-                                                <a href="#" class="image"><img src="images/casa.jpg" width="75" height="75" alt="" /></a>
-												<h3>Seguro Lar</h3>
-												<p>Seguros Multirriscos Habitação, Acidentes Empregada Doméstica, Responsabilidade Civil Familiar.</p><br />
-                                                <ul class="actions">
-                                                    <li><a href="SeguroLar.html" class="button special">Peça Simulação</a></li>
-												    <br /><br /><li><a href="SeguroLar.html" class="button">Saiba Mais</a></li>
-													</ul>
-											</div>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Alojamentos</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="AlojamentoLocal.html" class="image"><img src="images/madeiraview.jpg" alt="" /></a>
-											<h3>Procurar Alojamento Local</h3>
-											<p>Deseja encontrar um lugar na ilha da Madeira onde ficar durante as suas férias? </p>
-											<ul class="actions">
-												<li><a href="AlojamentoLocal.html" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="AlojamentoGestao.html" class="image"><img src="images/gestao.jpg" alt="" /></a>
-											<h3>Gestão de Alojamentos</h3>
-											<p>É proprietário e quer rentabilizar a sua casa e não ter preocupações?</p>
-											<ul class="actions">
-												<li><a href="AlojamentoGestao.html" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
                             
-                            <!-- Section -->
+                            
+							<!-- Section -->
 								<section>
-									<header class="major">
-										<h2>Outros Serviços</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="Taxi.html" class="image"><img src="images/taxitrans.png" alt="" /></a>
-											<h3>Serviço Taxi</h3>
-											<p>Nós já conhecemos a nossa ilha, esta na altura de a conhecer também.
-                                                Oferecemos Transporte ao Aeroporto, Voltas à Ilha, Transporte para as Caminhadas e entre outros.</p>
-											<ul class="actions">
-												<li><a href="Taxi.html" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="RentaCar.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
-											<h3>Rent a Car</h3>
-											<p>Reserve o seu carro de aluguer de forma rápida e confortável através da Emprise Serviços.</p>
-											<ul class="actions">
-												<br /><br /><li><a href="RentaCar.html" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
+									                           
+                                <h1>Rent a Car</h1>
+                                <h2></h2>
 
+                                <!-- Section -->
+								<section>
+									<h3>Brevemente Disponível</h3>
+								</section>
 						</div>
 					</div>
 
@@ -213,6 +128,22 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+        
+        <!--  Form -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+            </script>
+            <script>
+            function postContactToGoogle() {
+            var Nome=$('#Nome').val();
+            var Email=$('#Email').val();
+            var Telefone=$('#Telefone').val();
+            var Mensagem=$('#Mensagem').val();   
+
+            $.ajax({
+            url:"https://docs.google.com/forms/d/18NGLgn4MWk4JvSdZJBkKNyPR1d69iI6c0fDYooCLe4g/formResponse",data:{"entry.2050492562":Nome,"entry.1698073975":Email,"entry.370527646":Telefone,"entry.483334064":Mensagem},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado_.html");},200:function(){window.location.replace("Obrigado_.html");}}
+            });
+            }
+            </script>
 
 	</body>
 </html>
