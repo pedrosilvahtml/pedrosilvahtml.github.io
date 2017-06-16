@@ -36,9 +36,151 @@
                                 <h2></h2>
 
                                 <!-- Section -->
-								<section>
-									<h3>Brevemente Disponível</h3>
+									<h4>Preçario Época Alta</h4>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Grupo</th>
+																	<th>Viaturas</th>
+																	<th>+ de 7 dias</th>
+                                                                    <th>3 a 6 dias</th>
+                                                                    <th>1 a 2 dias</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>A</td>
+																	<td>Fiat Panda</td>
+																	<td>37€</td>
+                                                                    <td>39€</td>
+                                                                    <td>42€</td>
+																</tr>
+                                                                <tr>
+																	<td>B</td>
+																	<td>Nisan Micra / Mitsubishi Star</td>
+																	<td>44€</td>
+                                                                    <td>46€</td>
+                                                                    <td>48€</td>
+																</tr>
+                                                                <tr>
+																	<td>C</td>
+																	<td>Fiat Tipo Diesel</td>
+																	<td>49€</td>
+                                                                    <td>51€</td>
+                                                                    <td>53€</td>
+																</tr>
+                                                                <tr>
+																	<td>D</td>
+																	<td>Peugeot 308 HDI Automático</td>
+																	<td>58€</td>
+                                                                    <td>63€</td>
+                                                                    <td>69€</td>
+																</tr>
+                                                                <tr>
+																	<td>E</td>
+																	<td>Volkswagen TDI 9 Lugares</td>
+																	<td>90€</td>
+                                                                    <td>100€</td>
+                                                                    <td>120€</td>
+																</tr>
+                                                                <tr>
+																	<td>F</td>
+																	<td>Scooter Honda PCX 125</td>
+																	<td>22€</td>
+                                                                    <td>24€</td>
+                                                                    <td>28€</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+                                    <h4>Preçario Época Baixa</h4>
+													<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Grupo</th>
+																	<th>Viaturas</th>
+																	<th>+ de 7 dias</th>
+                                                                    <th>3 a 6 dias</th>
+                                                                    <th>1 a 2 dias</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>A</td>
+																	<td>Fiat Panda</td>
+																	<td>21€</td>
+                                                                    <td>24€</td>
+                                                                    <td>26€</td>
+																</tr>
+                                                                <tr>
+																	<td>B</td>
+																	<td>Nisan Micra / Mitsubishi Star</td>
+																	<td>26€</td>
+                                                                    <td>29€</td>
+                                                                    <td>31€</td>
+																</tr>
+                                                                <tr>
+																	<td>C</td>
+																	<td>Fiat Tipo Diesel</td>
+																	<td>31€</td>
+                                                                    <td>34€</td>
+                                                                    <td>37€</td>
+																</tr>
+                                                                <tr>
+																	<td>D</td>
+																	<td>Peugeot 308 HDI Automático</td>
+																	<td>44€</td>
+                                                                    <td>48€</td>
+                                                                    <td>53€</td>
+																</tr>
+                                                                <tr>
+																	<td>E</td>
+																	<td>Volkswagen TDI 9 Lugares</td>
+																	<td>70€</td>
+                                                                    <td>78€</td>
+                                                                    <td>94€</td>
+																</tr>
+                                                                <tr>
+																	<td>F</td>
+																	<td>Scooter Honda PCX 125</td>
+																	<td>19€</td>
+                                                                    <td>22€</td>
+                                                                    <td>25€</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 								</section>
+                                <section>
+                                <h2>Contacte-nos</h2><br/> 
+                                <h3>Email:</h3> <a href=mailto:empriseserviços@gmail.com>empriseservicos@gmail.com</a>
+                                <br/><br/><h3>Telefone:</h3>
+                                <p>+351 926 543 019</p>
+                                <form id="formRequest">
+                                     
+                                Nome:<br/>
+                                <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder=""><br/>
+
+                                Email:<br/>
+                                <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
+                                    
+                                Telefone:<br/>
+                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                
+                                <div class="12u$">
+								<textarea name="Mensagem" id="Mensagem" placeholder="Escreva aqui a sua mensagem." rows="6"></textarea>
+								</div>
+                                 <br/>    
+               
+                                <center>
+                                <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
+                                <!--<input type="reset" value="Limpar"/>-->
+                                </center>
+
+                                </form>
+                            </section>
 						</div>
 					</div>
 
@@ -129,7 +271,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
         
-        <!--  Form -->
+                    <!--  Form -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
             </script>
             <script>
