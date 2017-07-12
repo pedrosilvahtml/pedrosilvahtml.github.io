@@ -33,9 +33,9 @@
                                     <header class="major">
                                         
 										<h2>Seguro Alojamento Local</h2>
-                                        <a class="image"><img style="float: left"  height="150" width="200"src="images/alojamentolocalplaca.jpg"/></a>
+                                        
 									</header>
-                                    
+                                    <a class="image"><img style="float: left"  height="150" width="200"src="images/alojamentolocalplaca.jpg"/></a>
                                     <p>Para quem verdadeiramente gosta de proporcionar uma estadia segura, apresentamos uma solução de seguro ao Alojamento Local.</p>
    
                                     <div class="row">
@@ -61,7 +61,7 @@
                                     </ul>
                                     </div>
                                         <div class="4u 12u(mobile)">  
-                                    <h3>Para efetuar o seguro</h3>
+                                    <h3>Saiba mais</h3>
                                         <p>Contacte-nos, ou visite o nosso escritório para mais informações</p>
                                         <ul>
                                         <li><a href="https://www.zurich.com.pt/_/media/dbe/portugal/docs/para-a-sua-empresa/turismo-restauracao/alojamento-local/zurich-alojamento-local_brochura_vf.pdf?la=pt-pt&hash=25872B79BE440C8B813247E4A529E58DF32EA6A3">Consulte o folheto para mais informações sobre coberturas</a></li>
@@ -73,7 +73,74 @@
                                     </div>
                                     
                                     </div>
-                        
+                                    
+                                    <center> <input type="button" value="Peça Simulação" name="answer" onclick="showDiv('toggle')"/> </center>
+                                    <div id="toggle" style="display:none">
+                                    
+                                <form id="formRequest">
+        
+  
+                                Nome:<br/>
+                                <input type="text" name="Nome2" id="Nome2" maxlength="100"  placeholder="Nome Completo"><br/>
+
+                                Telefone:<br/>
+                                <input type="text" name="Telefone2" id="Telefone2" maxlength="100" placeholder=""/><br/>
+                                    
+                                Email:<br/>
+                                <input type="text" name="Email2" id="Email2" maxlength="100" placeholder=""/><br/>  
+                                    
+                                Data de Nascimento:<br/>
+                                <input type="text" name="DatadeNascimento2" id="DatadeNascimento2" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                
+                                NIF:<br/>
+                                <input type="text" name="NIF2" id="NIF2" maxlength="100" placeholder=""/><br/>
+                                
+                                Já tem um Alojamento Local registado?<br/>
+                                <input type="text" name="CheckforAL" id="CheckforAL" maxlength="100" placeholder="Sim/Não"/><br/>
+                                
+                                Número de Alojamento Local:<br/>
+                                <input type="text" name="NdoAL" id="NdoAL" maxlength="100" placeholder=""/><br/>
+                                
+                                Código Postal:<br/>
+                                <input type="text" name="CodigoPostal2" id="CodigoPostal2" maxlength="100" placeholder=""/><br/>
+                                    
+                                Morada:<br/>
+                                <input type="text" name="Morada2" id="Morada2" maxlength="100" placeholder=""/><br/>
+                                    
+                                Já tem Seguro Multiriscos Habitação?:<br/>
+                                <input type="text" name="checkforinsurance" id="checkforinsurance" maxlength="100" placeholder="Sim/Não"/><br/>
+                                    
+                                Ano de Construção ou Reconstrução:<br/>
+                                <input type="text" name="Anodeconstrucao2" id="Anodeconstrucao2" maxlength="100" placeholder=""/><br/>
+                                    
+                                Tipo de Propriedade:<br/>
+                                <input type="text" name="TipodePropriedade2" id="TipodePropriedade2" maxlength="100" placeholder="Apartamento/Casa"/><br/>
+                                    
+                                É um prédio com várias unidades de Alojamento Local?<br/>
+                                <input type="text" name="vila2" id="vila2" maxlength="100" placeholder=""/><br/>
+                                
+                                Valor do Imóvel:<br/>
+                                <input type="text" name="valorimovel" id="valorimovel" maxlength="100" placeholder="€"/><br/>
+                                
+                                Pretende assegurar também o recheio de casa?<br/>
+                                <input type="text" name="assegurarrecheio" id="assegurarrecheio" maxlength="100" placeholder="Sim/Não"/><br/>
+                                    
+                                Se pretende incluir o recheio indique valores aproximados:<br/>
+                                <input type="text" name="valorrecheio" id="valorrecheio" maxlength="100" placeholder="€"/><br/>
+             
+                                <center>
+                                <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
+                                <!--<input type="reset" value="Limpar"/>-->
+                                </center>
+
+
+                                </form>  
+                                        
+                                        
+                                    
+                                        
+                                        
+                                    </div>
                                 </section>
 								<section>
 									<header class="major">
@@ -260,8 +327,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script type="text/javascript">
+            function showDiv(toggle){
+            document.getElementById(toggle).style.display = 'block';
+            }
+            </script>
+
         
-            <!--  Form -->
+            <!--  Form 1 -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
             </script>
             <script>
@@ -283,6 +356,34 @@
               
             $.ajax({
             url:"https://docs.google.com/forms/d/1Vzhb7xGDhx9kkV8VQ08ic7WHwwgIDGGJL32idMQGKs4/formResponse",data:{"entry.1378872144":Nome,"entry.1326041509":Telefone,"entry.1670771882":Email,"entry.886818198":Edifício,"entry.404119373":Conteúdo,"entry.2079334708":ÁreaBruta,"entry.1149077910":CódigoPostal,"entry.2030477325":AnodeConstrução,"entry.1467058936":QualidadedeConstrução,"entry.1481386200":TipodeHabitação,"entry.117547358":desocupada60dias,"entry.1750077658":Construçãoexterior,"entry.1540592728":Piso},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            });
+            }
+            </script>
+            <!--  Form 2 -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+            </script>
+            <script>
+            function postContactToGoogle() {
+            var Nome2=$('#Nome2').val();
+            var Telefone2=$('#Telefone2').val();
+            var Email2=$('#Email2').val();
+            var DatadeNascimento2=$('#DatadeNascimento2').val();   
+            var NIF2=$('#NIF2').val();
+            var CheckforAL=$('#CheckforAL').val();
+            var NdoAL=$('#NdoAL').val();
+            var CodigoPostal2=$('#CodigoPostal2').val();
+            var Morada2=$('#Morada2').val();
+            var checkforinsurance=$('#checkforinsurance').val();
+            var Anodeconstrucao2=$('#Anodeconstrucao2').val();
+            var TipodePropriedade2=$('#TipodePropriedade2').val();
+            var vila2=$('#vila2').val();
+            var valorimovel=$('#valorimovel').val();
+            var assegurarrecheio=$('#assegurarrecheio').val();
+            var valorrecheio=$('#valorrecheio').val();
+
+              
+            $.ajax({
+            url:"https://docs.google.com/forms/d/1R6NDsRS2vW1UAbYbR9bLPJH4masV6j3WJ4JOgAtjtLI/formResponse",data:{"entry.1417101973":Nome2,"entry.1458202628":Telefone2,"entry.603395246":Email2,"entry.271503799":DatadeNascimento2,"entry.1043512588":NIF2,"entry.286837865":CheckforAL,"entry.498164425":NdoAL,"entry.1598537064":CodigoPostal2,"entry.1835172104":Morada2,"entry.268729446":checkforinsurance,"entry.1322320949":Anodeconstrucao2,"entry.429615847":TipodePropriedade2,"entry.213480529":vila2,"entry.304269885":valorimovel,"entry.200330200":assegurarrecheio,"entry.1019767528":valorrecheio},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>
