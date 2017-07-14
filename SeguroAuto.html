@@ -111,6 +111,9 @@
                                     
                                 Morada e Código Postal de Residência:<br/>
                                 <input type="text" name="CodigoPostal" id="CodigoPostal" maxlength="100" placeholder="" required><br/>
+                                    
+                                Deseja Proteção Quebra Isolada de Vidros?<br/>
+                                <input type="text" name="QV" id="QV" maxlength="100" placeholder="Sim/Não" required><br/>
              
                                 <center>
                                 <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
@@ -239,9 +242,11 @@
             var CodigoPostal=$('#CodigoPostal').val();
             var NIF=$('#NIF').val();
             var NCarta=$('#Ncarta').val();
+            var QV=$('#QV').val();
+                
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1Izwmv0xqG0k-Jn-lMrzN9VzQaH_ijFBNQEA0XMcvpjg/formResponse",data:{"entry.1470953227":Nome,"entry.1744960072":Telefone,"entry.771707804":Email,"entry.371038216":Matricula,"entry.73737971":DatadaPrimeiraMatricula,"entry.2052185844":Combustível,"entry.1702398671":Marca,"entry.485482698":Modelo,"entry.114310647":Cilindrada,"entry.1952014090":DatadeNascimento,"entry.51849102":DataCartadeCondução,"entry.1982439059":Sexo,"entry.652823950":Numerodeanoscomseguro,"entry.1089358811":Jasegurado,"entry.752664848":CodigoPostal,"entry.226748004":NIF,"entry.1510904915":NCarta},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1Izwmv0xqG0k-Jn-lMrzN9VzQaH_ijFBNQEA0XMcvpjg/formResponse",data:{"entry.1470953227":Nome,"entry.1744960072":Telefone,"entry.771707804":Email,"entry.371038216":Matricula,"entry.73737971":DatadaPrimeiraMatricula,"entry.2052185844":Combustível,"entry.1702398671":Marca,"entry.485482698":Modelo,"entry.114310647":Cilindrada,"entry.1952014090":DatadeNascimento,"entry.51849102":DataCartadeCondução,"entry.1982439059":Sexo,"entry.652823950":Numerodeanoscomseguro,"entry.1089358811":Jasegurado,"entry.752664848":CodigoPostal,"entry.226748004":NIF,"entry.1510904915":NCarta,"entry.300929721":QV},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>

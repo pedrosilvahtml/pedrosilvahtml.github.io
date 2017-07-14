@@ -126,6 +126,9 @@
                                     
                                 Se pretende incluir o recheio indique valores aproximados:<br/>
                                 <input type="text" name="valorrecheio" id="valorrecheio" maxlength="100" placeholder="€"/><br/>
+                                    
+                                O establecimento é Alojamento Local (Full Time / Part Time):<br/>
+                                <input type="text" name="fulltime" id="fulltime" maxlength="100" placeholder="Full Time / Part Time"/><br/>
              
                                 <center>
                                 <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
@@ -253,10 +256,12 @@
             var valorimovel=$('#valorimovel').val();
             var assegurarrecheio=$('#assegurarrecheio').val();
             var valorrecheio=$('#valorrecheio').val();
+            var fulltime=$('#fulltime').val();
+                
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1R6NDsRS2vW1UAbYbR9bLPJH4masV6j3WJ4JOgAtjtLI/formResponse",data:{"entry.1417101973":Nome2,"entry.1458202628":Telefone2,"entry.603395246":Email2,"entry.271503799":DatadeNascimento2,"entry.1043512588":NIF2,"entry.286837865":CheckforAL,"entry.498164425":NdoAL,"entry.1598537064":CodigoPostal2,"entry.1835172104":Morada2,"entry.268729446":checkforinsurance,"entry.1322320949":Anodeconstrucao2,"entry.429615847":TipodePropriedade2,"entry.213480529":vila2,"entry.304269885":valorimovel,"entry.200330200":assegurarrecheio,"entry.1019767528":valorrecheio},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1R6NDsRS2vW1UAbYbR9bLPJH4masV6j3WJ4JOgAtjtLI/formResponse",data:{"entry.1417101973":Nome2,"entry.1458202628":Telefone2,"entry.603395246":Email2,"entry.271503799":DatadeNascimento2,"entry.1043512588":NIF2,"entry.286837865":CheckforAL,"entry.498164425":NdoAL,"entry.1598537064":CodigoPostal2,"entry.1835172104":Morada2,"entry.268729446":checkforinsurance,"entry.1322320949":Anodeconstrucao2,"entry.429615847":TipodePropriedade2,"entry.213480529":vila2,"entry.304269885":valorimovel,"entry.200330200":assegurarrecheio,"entry.1019767528":valorrecheio,"entry.1104905719":fulltime},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>
