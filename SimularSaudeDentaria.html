@@ -37,6 +37,9 @@
                                 <h3>Dados pessoais</h3>     
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
+                                    
+                                NIF:<br/>
+                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="NIF"><br/>
 
                                 Morada:<br/>
                                 <input type="text" name="Morada" id="Morada" maxlength="100" placeholder=""/><br/>
@@ -179,6 +182,7 @@
             <script>
             function postContactToGoogle() {
             var Nome=$('#Nome').val();
+            var NIF=$('#NIF').val();
             var Morada=$('#Morada').val();
             var CódigoPostal=$('#CódigoPostal').val();
             var Telefone=$('#Telefone').val();   
@@ -190,7 +194,7 @@
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1VItaLcudaJOvFz6q-B1SZcb2vtsef_QLvDXTYdc3LoY/formResponse",data:{"entry.332577577":Nome,"entry.224317439":Morada,"entry.108342154":CódigoPostal,"entry.1025857336":Telefone,"entry.1989287637":Email,"entry.363069463":DatadeNascimento,"entry.26662428":NomedoCônjuge,"entry.579033761":DatadeNascimentodoCônjuge,"entry.1989029628":DataNascimentodoprimeirofilho},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1VItaLcudaJOvFz6q-B1SZcb2vtsef_QLvDXTYdc3LoY/formResponse",data:{"entry.332577577":Nome,"entry.2102859688":NIF,"entry.224317439":Morada,"entry.108342154":CódigoPostal,"entry.1025857336":Telefone,"entry.1989287637":Email,"entry.363069463":DatadeNascimento,"entry.26662428":NomedoCônjuge,"entry.579033761":DatadeNascimentodoCônjuge,"entry.1989029628":DataNascimentodoprimeirofilho},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>

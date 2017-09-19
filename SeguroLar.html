@@ -70,6 +70,9 @@
                                 <h3>Dados pessoais</h3>    
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
+                                    
+                                NIF:<br/>
+                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="NIF"><br/>
 
                                 Telefone:<br/>
                                 <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
@@ -203,6 +206,7 @@
             <script>
             function postContactToGoogle() {
             var Nome=$('#Nome').val();
+            var NIF=$('#NIF').val();
             var Telefone=$('#Telefone').val();
             var Email=$('#Email').val();
             var Edifício=$('#Edifício').val();   
@@ -218,7 +222,7 @@
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1Vzhb7xGDhx9kkV8VQ08ic7WHwwgIDGGJL32idMQGKs4/formResponse",data:{"entry.1378872144":Nome,"entry.1326041509":Telefone,"entry.1670771882":Email,"entry.886818198":Edifício,"entry.404119373":Conteúdo,"entry.2079334708":ÁreaBruta,"entry.1149077910":CódigoPostal,"entry.2030477325":AnodeConstrução,"entry.1467058936":QualidadedeConstrução,"entry.1481386200":TipodeHabitação,"entry.117547358":desocupada60dias,"entry.1750077658":Construçãoexterior,"entry.1540592728":Piso},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1Vzhb7xGDhx9kkV8VQ08ic7WHwwgIDGGJL32idMQGKs4/formResponse",data:{"entry.1378872144":Nome,"entry.1671854414":NIF,"entry.1326041509":Telefone,"entry.1670771882":Email,"entry.886818198":Edifício,"entry.404119373":Conteúdo,"entry.2079334708":ÁreaBruta,"entry.1149077910":CódigoPostal,"entry.2030477325":AnodeConstrução,"entry.1467058936":QualidadedeConstrução,"entry.1481386200":TipodeHabitação,"entry.117547358":desocupada60dias,"entry.1750077658":Construçãoexterior,"entry.1540592728":Piso},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>

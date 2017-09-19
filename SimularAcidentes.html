@@ -37,6 +37,12 @@
                                 <h3>Dados pessoais</h3>     
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
+                                
+                                NIF:<br/>
+                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="NIF"><br/>
+                                
+                                Profissão:<br/>
+                                <input type="text" name="Profissao" id="Profissao" maxlength="100"  placeholder=""><br/>
 
                                 Morada:<br/>
                                 <input type="text" name="Morada" id="Morada" maxlength="100" placeholder=""/><br/>
@@ -179,6 +185,8 @@
             <script>
             function postContactToGoogle() {
             var Nome=$('#Nome').val();
+            var Nome=$('#NIF').val();
+            var Profissao=$('#Profissao').val();
             var Morada=$('#Morada').val();
             var CódigoPostal=$('#CódigoPostal').val();
             var Telefone=$('#Telefone').val();   
@@ -190,7 +198,7 @@
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1UodmrbeSGt2ONwsF2H5wKIIeFtTfrct-CPXSZumn07g/formResponse",data:{"entry.1551519440":Nome,"entry.939011866":Morada,"entry.1883586875":CódigoPostal,"entry.1153750778":Telefone,"entry.1366427968":Email,"entry.459937749":DatadeNascimento,"entry.431225255":NomedoCônjuge,"entry.1020832785":DatadeNascimentodoCônjuge,"entry.17742113":QntdeFilhos},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1UodmrbeSGt2ONwsF2H5wKIIeFtTfrct-CPXSZumn07g/formResponse",data:{"entry.1551519440":Nome,"entry.530504446":NIF,"entry.1387009095":Profissao,"entry.939011866":Morada,"entry.1883586875":CódigoPostal,"entry.1153750778":Telefone,"entry.1366427968":Email,"entry.459937749":DatadeNascimento,"entry.431225255":NomedoCônjuge,"entry.1020832785":DatadeNascimentodoCônjuge,"entry.17742113":QntdeFilhos},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>

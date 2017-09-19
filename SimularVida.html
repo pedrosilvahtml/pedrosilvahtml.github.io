@@ -37,6 +37,9 @@
                                 <form id="formRequest"> 
                                     
                                 <h3>Dados pessoais</h3>  
+                                
+                                NIF:<br/>
+                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="Numero de Identificação Fiscal"><br/>
                                     
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
@@ -191,6 +194,7 @@
             <script>
             function postContactToGoogle() {
             var Nome=$('#Nome').val();
+            var NIF=$('#NIF').val();
             var Morada=$('#Morada').val();
             var CodigoPostal=$('#CodigoPostal').val();
             var Telefone=$('#Telefone').val();   
@@ -205,7 +209,7 @@
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1oMRaF2x7NRcALv37gLy44mPJBPPtsZ30ZgJVtSrpWWI/formResponse",data:{"entry.1873742773":Nome,"entry.1324986936":Morada,"entry.343437509":CodigoPostal,"entry.1649382573":Telefone,"entry.171158620":Email,"entry.1451511469":DataNascimento,"entry.884548401":NomedoCônjuge,"entry.1098143733":DataNascimentodoCônjuge,"entry.352074158":Capitalasegurar,"entry.325485470":Períododoempréstimo,"entry.718869460":Banco,"entry.1813919024":Balcão},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1oMRaF2x7NRcALv37gLy44mPJBPPtsZ30ZgJVtSrpWWI/formResponse",data:{"entry.1873742773":Nome,"entry.1598338718":NIF,"entry.1324986936":Morada,"entry.343437509":CodigoPostal,"entry.1649382573":Telefone,"entry.171158620":Email,"entry.1451511469":DataNascimento,"entry.884548401":NomedoCônjuge,"entry.1098143733":DataNascimentodoCônjuge,"entry.352074158":Capitalasegurar,"entry.325485470":Períododoempréstimo,"entry.718869460":Banco,"entry.1813919024":Balcão},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>
