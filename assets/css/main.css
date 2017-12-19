@@ -4072,3 +4072,15 @@
     .thumbnailimage{
     border-radius: 3%;
 }
+.logosimg {
+float: left;
+    position: relative;
+   width: 42px; /* I took the width from your post and placed it in css */
+   height: 42px;
+}
+
+/* This will style any <img> element in .parent div */
+.logosimg img {
+   height: 100%;
+   width: 100%;
+}
