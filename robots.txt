@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /Imoveis.html
+
+Sitemap: http://empriseservicos.com/sitemap.xml
