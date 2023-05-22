@@ -86,23 +86,23 @@
 										<h2>Formulário de Contacto</h2>
 									</header>
 									
-								<form id="formRequest">
+								<form id="formRequest" onSubmit="postContactToGoogle()">
                                 Nome:<br/>
-                                <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder=""><br/>
+                                <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="" required><br/>
 
                                 Email:<br/>
-                                <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
+                                <input type="text" name="Email" id="Email" maxlength="100" placeholder="" required><br/>
                                     
                                 Telefone:<br/>
-                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder="" required><br/>
                                 
                                 <div class="12u$">
-								<textarea name="Mensagem" id="Mensagem" placeholder="Escreva aqui a sua mensagem." rows="6"></textarea>
+								<textarea name="Mensagem" id="Mensagem" placeholder="Escreva aqui a sua mensagem." rows="6" required></textarea>
 								</div>
                                  <br/>    
                
                                 <center>
-                                <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
+                                <input type="Submit" name="Submit" id="Submit" value="Send"/>
                                 <!--<input type="reset" value="Limpar"/>-->
                                 </center>
 
@@ -142,31 +142,6 @@
 									</ul>
 								</nav>
 
-							<!-- Section 
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-                            -->
-							<!-- Section -->
 								<section>
 									<header class="major">
 										<h2>Entre em contacto</h2>
@@ -212,6 +187,7 @@
             </script>
             <script>
             function postContactToGoogle() {
+			event.preventDefault();
             var Nome=$('#Nome').val();
             var Email=$('#Email').val();
             var Telefone=$('#Telefone').val();
