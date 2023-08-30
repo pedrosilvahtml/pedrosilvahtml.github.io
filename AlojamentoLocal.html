@@ -642,26 +642,26 @@ You also have access to a garage for parking."
                                     </div>
                                 </section>        
                                 <section>       
-                                            <form id="formRequest">
+                                            <form id="formRequest" onSubmit="postContactToGoogle()">
                                             <h3>Contact us to make a reservation with no additional fees!</h3><br/>      
                                             Name:<br/>
-                                            <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder=""><br/>
+                                            <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="" required><br/>
 
                                             Email:<br/>
-                                            <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
+                                            <input type="text" name="Email" id="Email" maxlength="100" placeholder="" required><br/>
 
                                             Phone:<br/>
-                                            <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                            <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder="" required><br/>
                                             
                                             
 
                                             <div class="12u$">
-                                            <textarea name="Mensagem" id="Mensagem" placeholder="Tell us the house you would like to book, when and how many people." rows="6"></textarea>
+                                            <textarea name="Mensagem" id="Mensagem" placeholder="Tell us the house you would like to book, when and how many people." rows="6" required></textarea>
                                             </div>
                                              <br/>    
 
                                             <center>
-                                            <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
+                                            <input type="Submit" name="Submit" id="Submit" value="Send"/>
                                             <!--<input type="reset" value="Limpar"/>-->
                                             </center>
 
@@ -771,6 +771,7 @@ You also have access to a garage for parking."
             </script>
             <script>
             function postContactToGoogle() {
+			event.preventDefault();
             var Nome=$('#Nome').val();
             var Email=$('#Email').val();
             var Telefone=$('#Telefone').val();

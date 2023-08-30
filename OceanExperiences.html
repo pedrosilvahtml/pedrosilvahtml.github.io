@@ -132,27 +132,27 @@
                                     
                                 </section>
                                         <section>
-                                            <form id="formRequest">
+                                            <form id="formRequest" onSubmit="postContactToGoogle()">
                                             <h3>Contact Us</h3><br/>
                                             <h3>Email:</h3> <a href=mailto:empriseservicos@gmail.com>empriseservicos@gmail.com</a>
                                             <br/><br/><h3>Phone Number:</h3>
                                             <p>+351 968 377 262</p>
                                             Name:<br/>
-                                            <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder=""><br/>
+                                            <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="" required><br/>
 
                                             Email:<br/>
-                                            <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/>
+                                            <input type="text" name="Email" id="Email" maxlength="100" placeholder="" required><br/>
 
                                             Phone:<br/>
-                                            <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                            <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder="" required><br/>
 
                                             <div class="12u$">
-                                            <textarea name="Mensagem" id="Mensagem" placeholder="Write your Message here." rows="6"></textarea>
+                                            <textarea name="Mensagem" id="Mensagem" placeholder="Write your Message here." rows="6" required></textarea>
                                             </div>
                                              <br/>    
 
                                             <center>
-                                            <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
+                                            <input type="Submit" name="Submit" id="Submit" value="Send"/>
                                             <!--<input type="reset" value="Limpar"/>-->
                                             </center>
 
@@ -262,13 +262,14 @@
             </script>
             <script>
             function postContactToGoogle() {
+			event.preventDefault();
             var Nome=$('#Nome').val();
             var Email=$('#Email').val();
             var Telefone=$('#Telefone').val();
             var Mensagem=$('#Mensagem').val();   
 
             $.ajax({
-            url:"https://docs.google.com/forms/d/1ZZgGrq7Iz9OuHWBJRcFKXBlWiML5mYmRKvAq5jsNVyk/formResponse",data:{"entry.305215271":Nome,"entry.1227303864":Email,"entry.1127100256":Telefone,"entry.1006088769":Mensagem},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado_.html");},200:function(){window.location.replace("Obrigado_.html");}}
+            url:"https://docs.google.com/forms/d/18NGLgn4MWk4JvSdZJBkKNyPR1d69iI6c0fDYooCLe4g/formResponse",data:{"entry.2050492562":Nome,"entry.1698073975":Email,"entry.370527646":Telefone,"entry.483334064":Mensagem},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado_.html");},200:function(){window.location.replace("Obrigado_.html");}}
             });
             }
             </script>
