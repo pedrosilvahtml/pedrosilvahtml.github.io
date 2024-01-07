@@ -1,5 +1,13 @@
 User-Agent: *
 Disallow: 
+Disallow: /Imoveis
 Disallow: /Imoveis.html
+Disallow: /check-in-studio-one
+Disallow: /check-in-studio-one.html
+Disallow: Imoveis
+Disallow: Imoveis.html
+Disallow: check-in-studio-one
+Disallow: check-in-studio-one.html
+
 
 Sitemap: http://empriseservicos.com/sitemap.xml
