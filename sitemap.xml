@@ -17,25 +17,25 @@
   <loc>http://empriseservicos.com/SeguroAuto.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <priority>0.10</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/SeguroSaude.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <priority>0.10</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/SeguroLar.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <priority>0.10</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/AlojamentoLocal.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/AlojamentoGestao.html</loc>
@@ -47,13 +47,13 @@
   <loc>http://empriseservicos.com/Taxi.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <priority>0.50</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/RentaCar.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/Contactos.html</loc>
@@ -65,24 +65,24 @@
   <loc>http://empriseservicos.com/SimularVida.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <priority>0.1</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/SimularAcidentes.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <priority>0.1</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/SimularSaude.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <priority>0.1</priority>
 </url>
 <url>
   <loc>http://empriseservicos.com/SimularSaudeDentaria.html</loc>
   <lastmod>2017-07-11T11:04:30+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+  <priority>0.1</priority>
 </url>
 </urlset>
