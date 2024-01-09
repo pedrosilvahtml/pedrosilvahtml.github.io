@@ -4,10 +4,19 @@ Disallow: /Imoveis
 Disallow: /Imoveis.html
 Disallow: /check-in-studio-one
 Disallow: /check-in-studio-one.html
-Disallow: Imoveis
-Disallow: Imoveis.html
 Disallow: check-in-studio-one
 Disallow: check-in-studio-one.html
+Disallow: /check-in-studio-two
+Disallow: /check-in-studio-two.html
+Disallow: check-in-studio-two
+Disallow: check-in-studio-two.html
+Disallow: /check-in-apt-massapez
+Disallow: /check-in-apt-massapez.html
+Disallow: check-in-apt-massapez
+Disallow: check-in-apt-massapez.html
+Disallow: Imoveis
+Disallow: Imoveis.html
+
 
 
 Sitemap: http://empriseservicos.com/sitemap.xml
