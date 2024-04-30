@@ -18,6 +18,10 @@ Disallow: /check-in-apt-torbit-one
 Disallow: /check-in-apt-torbit-one.html
 Disallow: check-in-apt-torbit-one
 Disallow: check-in-apt-torbit-one.html
+Disallow: /check-in-casa-achada
+Disallow: /check-in-casa-achada.html
+Disallow: check-in-casa-achada
+Disallow: check-in-casa-achada.html
 Disallow: Imoveis
 Disallow: Imoveis.html
 
