@@ -98,17 +98,7 @@
 										</div>
 
 										
-										<h2 id="content"><i class="fa fa-info-circle" aria-hidden="true" style="color:#042c62"></i> Sending required guest information</h2>
-										<div class="box">
-											<p>As a legal requirement, we must collect identification information from all guests on the property. Following the check-in we will request the following details from each guest:</p>
-											<ul>
-												<li>Nationality.</li>
-												<li>Full name.</li>
-												<li>Date of birth.</li>
-												<li>ID number from personal ID card or passport ID number.</li>
-											</ul>
-											<a href="https://siba.sef.pt/" target="_blank">Official information regarding guest detail gathering laws.</a>
-										</div>
+										
 
 										
 										<h2 id="content"><i class="fa fa-list-ul" aria-hidden="true" style="color:#042c62"></i> Details</h2>
@@ -129,6 +119,59 @@
 												</dd>
 											</dl>
 										</div>
+										
+										<h2 id="content"><i class="fa fa-list-ul" aria-hidden="true" style="color:#042c62"></i> Jacuzzi information, rules and usage</h2>
+										<p><i>Maintaining a jacuzzi requires considerable care and attention. While we are committed to providing necessary assistance, we also count on you, our guest, to help us keep the jacuzzi in excellent working condition. Your cooperation ensures both your enjoyment and the experience of future guests.</i>
+										<br> <b>If you do not plan on using the jacuzzi, we ask that you please turn off the heating cycle while leaving the filter cycle active.</b> 
+										<br>More information below.</p>
+										<button onclick="myFunction()">Open/Close Information</button>
+										<br>
+										<br>
+										<div class="box" id="myDIV" style="display:none">
+											<dl>
+												<dt>Rules</dt>
+												<dd>
+													<ul>
+														<li>Always keep the jacuzzi covered when not in use.</li>
+														<li>Shower before use.</li>
+														<li>Use appropriate swimwear.</li>
+														<li>Enter and exit with care.</li>
+														<li>No pushing or jumping into the jacuzzi.</li>
+														<li>Avoid using creams, oils or other body products.</li>
+														<li>No food, utensils or glass items.</li>
+														<li>Be mindful of children around the jacuzzi.</li>
+													</ul>
+												</dd>
+												
+												<dt>Maintenance</dt>
+												<dd>
+													<ul>
+														<li><b>If you are staying longer than one week </b> we will provide cleaning tablets to throw in the jacuzzi, this must be done twice a week.</li>
+													</ul>
+												</dd>
+												
+												<dt>Usage</dt>
+												<dd>
+													<ul>
+														<li>Please only use the bubbles and temperature buttons, unless instructed otherwise.</li>
+													</ul>	
+												</dd>
+												
+											</dl>
+										</div>
+										
+										<h2 id="content"><i class="fa fa-info-circle" aria-hidden="true" style="color:#042c62"></i> Sending required guest information</h2>
+										<div class="box">
+											<p>As a legal requirement, we must collect identification information from all guests on the property. Following the check-in we will request the following details from each guest:</p>
+											<ul>
+												<li>Nationality.</li>
+												<li>Full name.</li>
+												<li>Date of birth.</li>
+												<li>ID number from personal ID card or passport ID number.</li>
+											</ul>
+											<a href="https://siba.sef.pt/" target="_blank">Official information regarding guest detail gathering laws.</a>
+										</div>
+
 										<h2 id="content"><i class="fa fa-key" aria-hidden="true" style="color:#042c62"></i> Check-out information</h2>
 										<div class="box">
 											<p><b>Return all keys to the lockbox used for your check-in, the code remains the same.</b><br>
@@ -156,6 +199,17 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+			function myFunction() {
+				var x = document.getElementById("myDIV");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+			</script>
 
 	</body>
 </html>
