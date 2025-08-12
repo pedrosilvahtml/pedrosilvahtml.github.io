@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Emprise Serviços - Seguro Saude</title>
+		<title>Emprise Serviços - Seguro Saude Dentária</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -40,29 +40,54 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Seguro de Vida, Acidentes e Saúde</h2>
-									</header> 
-								<div align="center">
-                                    </div> 
-                                   </br > <h3>Seguro de Vida</h3></br > 
-                                    <p>
-                                        O futuro do seu bem mais precioso está nas suas mãos.
+										<h2>Simular Seguro Saúde Dentária</h2>
+									</header>
+								<form id="formRequest">
+                                <h3>Dados pessoais</h3>     
+                                Nome:<br/>
+                                <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
+                                    
+                                NIF:<br/>
+                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="NIF"><br/>
 
-                                        A pensar no futuro da sua família, temos diversas soluções de seguro de Vida que garantem a estabilidade financeira no caso de um acontecimento imprevisto. Na maior parte dos casos é possível substituir o seguro bancário contratado como garantia ao crédito habitação.</p>
-									<h3>Acidentes Pessoais</h3>
-                                    <p>
-                                        Porque os imprevistos acontecem, este seguro garante um vasto leque de coberturas que garantem um capital por morte ou invalidez e ainda despesas de tratamento ou um subsidio diário em caso de internamento por acidente. </p>
+                                Morada:<br/>
+                                <input type="text" name="Morada" id="Morada" maxlength="100" placeholder=""/><br/>
+                                    
+                                Código Postal:<br/>
+                                <input type="text" name="CódigoPostal" id="CódigoPostal" maxlength="100" placeholder="0000-000"/><br/>
+                                    
+                                Telefone:<br/>
+                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder=""/><br/>
+                                
+                                Email:<br/>
+                                <input type="text" name="Email" id="Email" maxlength="100" placeholder=""/><br/> 
+                                  
+                                Data de Nascimento:<br/>
+                                <input type="text" name="DatadeNascimento" id="DatadeNascimento" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                
+                                <h3>Dados do Cônjuge</h3> 
+                                    
+                                Nome do Cônjuge:<br/>
+                                <input type="text" name="NomedoCônjuge" id="NomedoCônjuge" maxlength="100" placeholder="Nome Completo"/><br/>
+                                
+                                Data de Nascimento do Cônjuge:<br/>
+                                <input type="text" name="DatadeNascimentodoCônjuge" id="DatadeNascimentodoCônjuge" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
+                                    
+                                <h3>Filhos</h3>   
+                                    
+                                Data de Nascimento dos seus Filhos:<br/>
+                                <input type="text" name="DataNascimentodoprimeirofilho" id="DataNascimentodoprimeirofilho" maxlength="100" placeholder="Dia/Mês/Ano..."/><br/>
+                                    
 
-                                    <h3>Saúde</h3>
-                                    <p>
-                                        A saúde da sua família é uma preocupação verdadeira, tenha acesso a uma vasta rede de serviços Médicos e clínicas que garantem uma assistência imediata no caso de internamento ou até mesmo nas simples consultas de rotina.</p>
+             
+                                <center>
+                                <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
+                                <!--<input type="reset" value="Limpar"/>-->
+                                </center>
 
-                                    <h3>Saúde Dentária</h3>
-                                    <p>
-                                        Sem limites de idade mínima ou máxima e de utilização imediata, garante acesso a uma longa lista de médicos dentistas e clínicas dentárias por um preço irrisório.</p>
-									<a href="Contactos.html"><button class="button special fit">Peça-nos já uma simulação sem compromisso.</button></a>
+
+                                </form>
                             </section>
-
                             <section>
                                 <center><p>Agente Bónus, Mediação de Seguros.</p>
                                 <a class="nl" style="color:white" href="https://www.bonus-seguros.pt/"><img src="images/bonus.png"/></a></center>      
@@ -81,7 +106,7 @@
                                         <img src="images/logo.png" height="80" width="80"/><br>
 										<h2>Serviços</h2>
 									</header>
-									<ul>
+								<ul>
 										<li><a href="index.html">Homepage</a></li>
 										<li>
 											<span class="opener">Seguros</span>
@@ -95,7 +120,7 @@
 										<li><a href="AlojamentoLocal.html">Alojamento Local - Vacation Homes</a></li>
 										<li><a href="AlojamentoGestao.html">Gestão de Alojamentos</a></li>
                                         <li><a href="Taxi.html">Taxi Service</a></li>
-                                        <li><a href="RentaCar.html">Rent a Car</a></li><li><a href="OceanExperiences.html">Dolphin Watching & Ocean Experiences</a></li><!--<li><a href="Imoveis.html">Imóveis</a></li>-->
+                                        <li><a href="RentaCar.html">Rent a Car</a></li>
 										<li><a href="Contactos.html">Contactos</a></li>
 									</ul>
 								</nav>
@@ -145,11 +170,13 @@
 												Arco da Calheta<br />												
 									</ul>
 								</section>
-								
-						
-						<footer id="footer">
-									<p class="copyright">Design by <a href="https://html5up.net">HTML5 UP</a></p>
+
+							<!-- Footer
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved.
+                                        <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
+                             -->
 
 						</div>
 					</div>
@@ -163,5 +190,29 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
         
+
+            <!--  Form -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+            </script>
+            <script>
+            function postContactToGoogle() {
+            var Nome=$('#Nome').val();
+            var NIF=$('#NIF').val();
+            var Morada=$('#Morada').val();
+            var CódigoPostal=$('#CódigoPostal').val();
+            var Telefone=$('#Telefone').val();   
+            var Email=$('#Email').val();
+            var DatadeNascimento=$('#DatadeNascimento').val();
+            var NomedoCônjuge=$('#NomedoCônjuge').val();
+            var DatadeNascimentodoCônjuge=$('#DatadeNascimentodoCônjuge').val();
+            var DataNascimentodoprimeirofilho=$('#DataNascimentodoprimeirofilho').val();
+
+              
+            $.ajax({
+            url:"https://docs.google.com/forms/d/1VItaLcudaJOvFz6q-B1SZcb2vtsef_QLvDXTYdc3LoY/formResponse",data:{"entry.332577577":Nome,"entry.2102859688":NIF,"entry.224317439":Morada,"entry.108342154":CódigoPostal,"entry.1025857336":Telefone,"entry.1989287637":Email,"entry.363069463":DatadeNascimento,"entry.26662428":NomedoCônjuge,"entry.579033761":DatadeNascimentodoCônjuge,"entry.1989029628":DataNascimentodoprimeirofilho},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            });
+            }
+            </script>
+
 	</body>
 </html>

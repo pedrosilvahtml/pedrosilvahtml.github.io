@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Emprise Serviços - Seguro Saude Dentária</title>
+		<title>Emprise Serviços - Seguro Saude</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -40,15 +40,18 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Simular Seguro Saúde Dentária</h2>
+										<h2>Simular Seguro de Saúde</h2>
 									</header>
-								<form id="formRequest">
-                                <h3>Dados pessoais</h3>     
+                                <a href="resources/libertysaude.pdf">Consulte as vantagens e coberturas</a><br><br>
+                                    
+                                <form id="formRequest">
+                                <h3>Dados pessoais</h3>
+                                    
                                 Nome:<br/>
                                 <input type="text" name="Nome" id="Nome" maxlength="100"  placeholder="Nome Completo"><br/>
-                                    
+                                
                                 NIF:<br/>
-                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="NIF"><br/>
+                                <input type="text" name="NIF" id="NIF" maxlength="100"  placeholder="Numero de Identificação Fiscal"><br/>
 
                                 Morada:<br/>
                                 <input type="text" name="Morada" id="Morada" maxlength="100" placeholder=""/><br/>
@@ -65,7 +68,7 @@
                                 Data de Nascimento:<br/>
                                 <input type="text" name="DatadeNascimento" id="DatadeNascimento" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
                                 
-                                <h3>Dados do Cônjuge</h3> 
+                                <h3>Dados do Cônjuge</h3>   
                                     
                                 Nome do Cônjuge:<br/>
                                 <input type="text" name="NomedoCônjuge" id="NomedoCônjuge" maxlength="100" placeholder="Nome Completo"/><br/>
@@ -75,8 +78,8 @@
                                     
                                 <h3>Filhos</h3>   
                                     
-                                Data de Nascimento dos seus Filhos:<br/>
-                                <input type="text" name="DataNascimentodoprimeirofilho" id="DataNascimentodoprimeirofilho" maxlength="100" placeholder="Dia/Mês/Ano..."/><br/>
+                                Data de Nascimento do Primeiro Filho:<br/>
+                                <input type="text" name="DataNascimentodoprimeirofilho" id="DataNascimentodoprimeirofilho" maxlength="100" placeholder="Dia/Mês/Ano"/><br/>
                                     
 
              
@@ -84,7 +87,6 @@
                                 <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Enviar"/>
                                 <!--<input type="reset" value="Limpar"/>-->
                                 </center>
-
 
                                 </form>
                             </section>
@@ -120,7 +122,7 @@
 										<li><a href="AlojamentoLocal.html">Alojamento Local - Vacation Homes</a></li>
 										<li><a href="AlojamentoGestao.html">Gestão de Alojamentos</a></li>
                                         <li><a href="Taxi.html">Taxi Service</a></li>
-                                        <li><a href="RentaCar.html">Rent a Car</a></li><li><a href="OceanExperiences.html">Dolphin Watching & Ocean Experiences</a></li><!--<li><a href="Imoveis.html">Imóveis</a></li>-->
+                                        <li><a href="RentaCar.html">Rent a Car</a></li>
 										<li><a href="Contactos.html">Contactos</a></li>
 									</ul>
 								</nav>
@@ -209,7 +211,7 @@
 
               
             $.ajax({
-            url:"https://docs.google.com/forms/d/1VItaLcudaJOvFz6q-B1SZcb2vtsef_QLvDXTYdc3LoY/formResponse",data:{"entry.332577577":Nome,"entry.2102859688":NIF,"entry.224317439":Morada,"entry.108342154":CódigoPostal,"entry.1025857336":Telefone,"entry.1989287637":Email,"entry.363069463":DatadeNascimento,"entry.26662428":NomedoCônjuge,"entry.579033761":DatadeNascimentodoCônjuge,"entry.1989029628":DataNascimentodoprimeirofilho},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
+            url:"https://docs.google.com/forms/d/1KnzQPXqYq66Y8JElGlegjHMYd35GXA9lU1bEwjv0n-A/formResponse",data:{"entry.477143479":Nome,"entry.2132244708":NIF,"entry.1497018938":Morada,"entry.1465467635":CódigoPostal,"entry.254253148":Telefone,"entry.1112661208":Email,"entry.500728425":DatadeNascimento,"entry.983849386":NomedoCônjuge,"entry.401033051":DatadeNascimentodoCônjuge,"entry.96226782":DataNascimentodoprimeirofilho},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado.html");},200:function(){window.location.replace("Obrigado.html");}}
             });
             }
             </script>
