@@ -348,6 +348,17 @@ The house is equipped with everything you might need for your stay.</p>
 
                                             </form>
                                 </section>  
+
+                                <section>
+								<p style="font-size: 12px;">
+									EN | By submitting any form, you agree that your personal data will be used to process your request in accordance with General Data Protection Regulation (GDPR).
+									We will not share your data with third parties except where required to fulfill your request.
+								</p>
+								<p style="font-size: 12px;">
+									PT | Ao submeter qualquer formulário, concorda que os seus dados pessoais serão utilizados para processar o seu pedido em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD).
+									Não partilharemos os seus dados com terceiros, exceto quando necessário para cumprir o seu pedido.
+								</p>
+							</section>   
 									
 								
 						</div>
@@ -423,7 +434,7 @@ The house is equipped with everything you might need for your stay.</p>
             var Mensagem=$('#Mensagem').val();   
 
             $.ajax({
-            url:"https://docs.google.com/forms/d/1BSwyzIa1ynRRZQIaaDKW0A_JvrQKOmFB6lvJ80rXi-s/formResponse",data:{"entry.82935241":Nome,"entry.1322850402":Email,"entry.86207474":Telefone,"entry.761940204":Mensagem},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("Obrigado_.html");},200:function(){window.location.replace("Obrigado_.html");}}
+            url:"https://docs.google.com/forms/d/1BSwyzIa1ynRRZQIaaDKW0A_JvrQKOmFB6lvJ80rXi-s/formResponse",data:{"entry.82935241":Nome,"entry.1322850402":Email,"entry.86207474":Telefone,"entry.761940204":Mensagem},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("FormSent.html");},200:function(){window.location.replace("FormSent.html");}}
             });
             }
             </script>
