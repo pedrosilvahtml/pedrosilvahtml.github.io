@@ -272,8 +272,8 @@
                                 Email:<br/>
                                 <input type="text" name="Email" id="Email" maxlength="100" placeholder="" required autocomplete="on"><br/>
                                     
-                                Phone:<br/>
-                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder="Country Code and Phone Number" required autocomplete="on"><br/>
+                                Contact:<br/>
+                                <input type="text" name="Telefone" id="Telefone" maxlength="100" placeholder="Country code and phone number" required autocomplete="on"><br/>
 
 								Preferred Vehicle Group:<br/>
                                 <select name="Group" id="Group" placeholder="" required autocomplete="on">
@@ -305,6 +305,9 @@
 								<br>
 								Preferred Return Location:<br>
                                 <input type="text" name="ReturnLocal" id="ReturnLocal" maxlength="100" placeholder="Airport | Hotel | Office Location" required autocomplete="on"><br>
+								
+								Additional Information:<br>
+                                <input type="text" name="ExtraInfo" id="ExtraInfo" maxlength="100" placeholder="Request additional information here such as extras" required autocomplete="on"><br>
                
                                 <center>
                                 <input type="Submit" name="Submit" id="Submit" value="Send"/>
@@ -400,9 +403,10 @@
 				var DeliveryLocal=$('#DeliveryLocal').val(); 
 				var ReturnDate=$('#ReturnDate').val(); 
 				var ReturnLocal=$('#ReturnLocal').val(); 
+				var ExtraInfo=$('#ExtraInfo').val(); 
 
 				$.ajax({
-				url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSf6lEduCx0J49OBMfcI8vMwY2RtN-Zcxor_HW3wuivJGwguRw/formResponse",data:{"entry.259016074":Nome,"entry.1029668925":Email,"entry.590983158":Telefone,"entry.1908237199":Group,"entry.493437020":DeliveryDate,"entry.993757913":DeliveryLocal,"entry.173438298":ReturnDate,"entry.458079173":ReturnLocal},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("FormSent.html");},200:function(){window.location.replace("FormSent.html");}}
+				url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSf6lEduCx0J49OBMfcI8vMwY2RtN-Zcxor_HW3wuivJGwguRw/formResponse",data:{"entry.259016074":Nome,"entry.1029668925":Email,"entry.590983158":Telefone,"entry.1908237199":Group,"entry.493437020":DeliveryDate,"entry.993757913":DeliveryLocal,"entry.173438298":ReturnDate,"entry.458079173":ReturnLocal,"entry.301512744":ExtraInfo},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("FormSent.html");},200:function(){window.location.replace("FormSent.html");}}
 				});
 				}
             </script>
